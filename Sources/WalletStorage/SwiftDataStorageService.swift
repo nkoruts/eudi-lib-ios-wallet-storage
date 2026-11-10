@@ -18,6 +18,7 @@ import Foundation
 import MdocDataModel18013
 import SwiftData
 
+@available(iOS 17, *)
 @Model
 public final class SwiftDataStoredDocument {
 	@Attribute(.unique) var storageKey: String
@@ -81,6 +82,7 @@ public final class SwiftDataStoredDocument {
 }
 
 /// Implements document storage using Apple's SwiftData framework.
+@available(iOS 17, *)
 public actor SwiftDataStorageService: DataStorageService {
 	private let container: ModelContainer
 
